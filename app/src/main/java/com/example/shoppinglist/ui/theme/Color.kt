@@ -2,23 +2,23 @@ package com.example.shoppinglist.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-val BrownLight = Color(0xFFA1887F)         // Coklat muda utama
-val BrownDark = Color(0xFF5D4037)          // Versi gelap
-val BrownOn = Color(0xFFFFFFFF)            // Teks di atas warna coklat
-val BrownBackground = Color(0xFFF5F5F5)    // Background terang
-val BrownOnBackground = Color(0xFF1C1B1F)  // Teks di atas background terang
-val BrownSurface = Color(0xFFFFFFFF)       // Surface terang
-val BrownOnSurface = Color(0xFF1C1B1F)     // Teks di atas surface terang
+val BrownLight = Color(0xFFA1887F)
+val BrownDark = Color(0xFF5D4037)
+val BrownOn = Color(0xFFFFFFFF)
+val BrownBackground = Color(0xFFF5F5F5)
+val BrownOnBackground = Color(0xFF1C1B1F)
+val BrownSurface = Color(0xFFFFFFFF)
+val BrownOnSurface = Color(0xFF1C1B1F)
 
-val BrownSurfaceDark = Color(0xFF3E2723)   // Surface gelap
-val BrownOnSurfaceDark = Color(0xFFE6E1E5) // Teks di atas surface gelap
+val BrownSurfaceDark = Color(0xFF3E2723)
+val BrownOnSurfaceDark = Color(0xFFE6E1E5)
 
-val BrownSecondary = Color(0xFF8D6E63)             // Coklat sekunder
-val BrownSecondaryContainer = Color(0xFFD7CCC8)    // Container sekunder
-val BrownOnSecondaryContainer = Color(0xFF3E2723)  // Teks di atas container sekunder
+val BrownSecondary = Color(0xFF8D6E63)
+val BrownSecondaryContainer = Color(0xFFD7CCC8)
+val BrownOnSecondaryContainer = Color(0xFF3E2723)
 
-val BrownPrimaryContainer = Color(0xFFD7CCC8)      // Container utama
-val BrownOnPrimaryContainer = Color(0xFF3E2723)    // Teks di atas container utama
+val BrownPrimaryContainer = Color(0xFFD7CCC8)
+val BrownOnPrimaryContainer = Color(0xFF3E2723)
 
 // Warna untuk dark mode
 val BrownDarkBackground = Color(0xFF121212)
