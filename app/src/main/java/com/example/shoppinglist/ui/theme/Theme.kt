@@ -1,6 +1,5 @@
 package com.example.shoppinglist.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
@@ -12,32 +11,38 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
-    secondary = PurpleGrey80,
-    tertiary = Pink80
+    primary = BrownDark,
+    onPrimary = BrownOn,
+    primaryContainer = BrownDarkPrimaryContainer,
+    onPrimaryContainer = BrownDarkOnPrimaryContainer,
+    secondary = BrownSecondary,
+    secondaryContainer = BrownDarkSecondaryContainer,
+    onSecondaryContainer = BrownDarkOnSecondaryContainer,
+    background = BrownDarkBackground,
+    onBackground = BrownDarkOnBackground,
+    surface = BrownSurfaceDark,
+    onSurface = BrownOnSurfaceDark
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
-    secondary = PurpleGrey40,
-    tertiary = Pink40
-
-    /* Other default colors to override
-    background = Color(0xFFFFFBFE),
-    surface = Color(0xFFFFFBFE),
-    onPrimary = Color.White,
-    onSecondary = Color.White,
-    onTertiary = Color.White,
-    onBackground = Color(0xFF1C1B1F),
-    onSurface = Color(0xFF1C1B1F),
-    */
+    primary = BrownLight,
+    onPrimary = BrownOn,
+    primaryContainer = BrownPrimaryContainer,
+    onPrimaryContainer = BrownOnPrimaryContainer,
+    secondary = BrownSecondary,
+    secondaryContainer = BrownSecondaryContainer,
+    onSecondaryContainer = BrownOnSecondaryContainer,
+    background = BrownBackground,
+    onBackground = BrownOnBackground,
+    surface = BrownSurface,
+    onSurface = BrownOnSurface
 )
 
 @Composable
 fun ShoppingListTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
-    dynamicColor: Boolean = true,
+    dynamicColor: Boolean = false,
     content: @Composable () -> Unit
 ) {
     val colorScheme = when {
@@ -49,10 +54,10 @@ fun ShoppingListTheme(
         darkTheme -> DarkColorScheme
         else -> LightColorScheme
     }
-
     MaterialTheme(
         colorScheme = colorScheme,
         typography = Typography,
+        shapes = Shapes,
         content = content
     )
 }
