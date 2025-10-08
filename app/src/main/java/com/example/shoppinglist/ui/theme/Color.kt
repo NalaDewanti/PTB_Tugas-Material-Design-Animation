@@ -20,7 +20,7 @@ val BrownOnSecondaryContainer = Color(0xFF3E2723)
 val BrownPrimaryContainer = Color(0xFFD7CCC8)
 val BrownOnPrimaryContainer = Color(0xFF3E2723)
 
-// Warna untuk dark mode
+
 val BrownDarkBackground = Color(0xFF121212)
 val BrownDarkOnBackground = Color(0xFFE6E1E5)
 val BrownDarkPrimaryContainer = Color(0xFF5D4037)
